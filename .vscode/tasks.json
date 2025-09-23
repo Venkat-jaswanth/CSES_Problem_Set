@@ -1,0 +1,44 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compile & Run C++",
+      "type": "shell",
+      "command": "g++ -std=c++17 \"${file}\" -o \"${workspaceFolder}\\program.exe\" && \"${workspaceFolder}\\program.exe\" < \"${workspaceFolder}\\input.txt\" > \"${workspaceFolder}\\output.txt\" && del \"${workspaceFolder}\\program.exe\"",
+      "presentation": {
+        "reveal": "never"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "when": "editorLangId == cpp",
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "Run Python",
+      "type": "shell",
+      "command": "python \"${file}\" < \"${workspaceFolder}\\input.txt\" > \"${workspaceFolder}\\output.txt\"",
+      "presentation": {
+        "reveal": "never"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "when": "editorLangId == python",
+      "problemMatcher": {
+        "owner": "python",
+        "fileLocation": ["relative", "${workspaceFolder}"],
+        "pattern": {
+          "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+          "file": 1,
+          "line": 2,
+          "column": 3,
+          "severity": 4,
+          "message": 5
+        }
+      }
+    }
+  ]
+}
