@@ -32,18 +32,13 @@ using pii = pair<int, int>;
 using vpii = vector<pair<int, int>>;
 
 void solve() {
-    int n;
-    cin >> n;
-    vi arr(n); // Changed from vector<int> to vi
-    loop(i,n) cin >> arr[i];
-    cout << "Array elements: ";
-    loop(i,n) cout << arr[i] << " ";
+    
 }
 
 int main() {
     fastio;
     int t;
     cin >> t;
-    while (t--) solve();
+    while(t--) solve();
     return 0;
 }

@@ -2,7 +2,7 @@
 using namespace std;
 
 // Macros for code blocks and expressions
-#define fastio               \
+#define fastio                 \
     ios::sync_with_stdio(0); \
     cin.tie(0);              \
     cout.tie(0);
@@ -17,28 +17,14 @@ using namespace std;
 #define each(x, a) for (auto &x : a)
 
 // Type aliases using 'using'
-using vll = vector<long long>;
 using ll = long long;
 using vi = vector<int>;
 using vvi = vector<vector<int>>;
 using pii = pair<int, int>;
 
-void solve(int t)
+void solve()
 {
     // Your solution logic here
-    vll arr;
-    ll first, res = 0;
-    cin >> first;
-    arr.pb(first);
-    rep(i, 1, t)
-    {
-        ll n;
-        cin >> n;
-        first = max(first, n);
-        res += first - n;
-        arr.pb(first);
-    }
-    cout << res << "\n";
 }
 
 int main()
@@ -46,6 +32,7 @@ int main()
     fastio;
     int t;
     cin >> t;
-    solve(t);
+    while (t--)
+        solve();
     return 0;
 }
