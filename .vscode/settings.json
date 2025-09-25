@@ -65,6 +65,7 @@
     "flat_map": "cpp",
     "flat_set": "cpp",
     "span": "cpp",
-    "stacktrace": "cpp"
+    "stacktrace": "cpp",
+    "iostream": "cpp"
   }
 }
