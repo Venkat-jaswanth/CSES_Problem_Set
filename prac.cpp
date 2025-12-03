@@ -25,6 +25,12 @@ using pii = pair<int, int>;
 void solve()
 {
     // Your solution logic here
+    int n;
+    cin >> n;
+    vi a(n);
+    loop(i, n) cin >> a[i];
+    sort(all(a));
+    loop(i, n) cout << a[i] << " ";
 }
 
 int main()
