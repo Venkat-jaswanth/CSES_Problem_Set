@@ -2,7 +2,7 @@
 
 using namespace std;
 const int maxN = 2e5+1;
-
+copui
 int N, x, cnt, pos[maxN];
 
 int main(){
